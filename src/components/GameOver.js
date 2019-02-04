@@ -55,14 +55,15 @@ class GameOver extends React.Component {
               <button className="button is-primary">Submit</button>
             </form>
           </div>
+          {this.highScores &&
           <div className="column">
             <div>
-              <p> High scores </p>
+              <p>High Scores</p>
               {this.highScores.map((score, index) => <div key={index}>{score.name}...{score.score}</div>)}
             </div>
-          </div>
+          </div>}
         </div>
-        <Link className="play-again" to="/" > Play Again </Link>
+        <Link className="play-again" to="/" >Play Again</Link>
       </div>
     )
   }
