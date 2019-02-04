@@ -24,7 +24,6 @@ class Game extends React.Component {
     this.setState( {chosenDifficulty: e.target.value})
   }
 
-
   render() {
     console.log(this.state)
     return (
