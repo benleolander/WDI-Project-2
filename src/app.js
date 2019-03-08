@@ -11,6 +11,16 @@ import Navbar from './components/common/Navbar'
 import GameOver from './components/GameOver'
 
 class App extends React.Component {
+  constructor() {
+    super()
+
+    this.state = {}
+  }
+
+  componentDidMount() {
+    axios.get('httl://localhost:4000/cocktails')
+      .then(res => this.setState({ cocktails: res.body }))
+  }
 
   render(){
     return (
