@@ -25,7 +25,7 @@ class BrainTraining extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`https://opentdb.com/api.php?amount=2&category=${this.props.category}&difficulty=${this.props.difficulty}&type=multiple&encode=url3986`)
+    axios.get(`https://opentdb.com/api.php?amount=10&category=${this.props.category}&difficulty=${this.props.difficulty}&type=multiple&encode=url3986`)
       .then(res => this.setState({ questions: res.data.results }))
 
   }
