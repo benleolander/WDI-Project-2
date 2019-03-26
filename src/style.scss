@@ -77,9 +77,11 @@ $control-radius-small: 0;
 .option-container {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   flex-wrap: wrap;
   align-items: center;
   height: 80vh;
+
 
   h1 {
     text-align: center;
@@ -87,7 +89,7 @@ $control-radius-small: 0;
 
   button {
     margin: 2px;
-    width: 33%;
+    width: 30%;
   }
 
   button:hover {

@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import axios from 'axios'
+
 import { BrowserRouter, Route, Switch} from 'react-router-dom'
 
 import './style.scss'
